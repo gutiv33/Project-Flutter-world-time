@@ -78,6 +78,23 @@ class _WelcomeState extends State<Welcome> {
                   fontFamily:'AlfaSlabOne-Regular'
                 ),
               ),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/map');
+                },
+                icon: Icon(
+                    Icons.map,
+                    size: 50,
+                ),
+                label: Text(
+                    "Map",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontFamily:'AlfaSlabOne-Regular'
+                  ),
+                ),
             )
           ],
         ),
